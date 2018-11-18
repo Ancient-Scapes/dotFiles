@@ -4,5 +4,5 @@
 ```zsh
 git clone https://github.com/SugarShootingStar/dotFiles.git
 chmod +x install.sh
-./install.sh
+sudo ./install.sh
 ```
