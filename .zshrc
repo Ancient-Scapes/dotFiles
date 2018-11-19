@@ -3,6 +3,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/bin:$PATH"
 export ZSH=/Users/$USER/.oh-my-zsh
 
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
 # イケてるテーマを設定
 ZSH_THEME="spaceship"
 
@@ -54,3 +58,11 @@ alias grso='git remote set-url origin'
 ## zsh
 alias sz='source ~/.zshrc'
 alias vz='vi ~/.zshrc'
+
+## anyenv
+alias ani='anyenv install'
+alias anu='anyenv update'
+
+## ndenv
+alias ndi='ndenv install'
+alias ndg='ndenv global'
