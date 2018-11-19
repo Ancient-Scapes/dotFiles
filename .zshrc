@@ -126,6 +126,7 @@ alias gaa='git add'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
 alias gp='git push'
+alias grso='git remote set-url origin'
 
 ## zsh
 alias sz='source ~/.zshrc'
