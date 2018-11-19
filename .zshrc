@@ -22,10 +22,6 @@ autoload -U compinit && compinit -u
 # 呪文
 source $ZSH/oh-my-zsh.sh
 
-# nvm用の設定
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # gitignore.io用のコマンド
 function gi() { curl -L -s -k https://www.gitignore.io/api/$@ ;}
 
