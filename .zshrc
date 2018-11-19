@@ -48,6 +48,7 @@ alias gs='git status'
 alias gaa='git add'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
+alias gc-mtypo='git commit -m "fix:typo"'
 alias gp='git push'
 alias grso='git remote set-url origin'
 
