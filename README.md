@@ -19,7 +19,7 @@ exec $SHELL -l
 
 ### ndenv
 ```zsh
-any1env install ndenv
+anyenv install ndenv
 ndenv install v11.2.0
 ndenv global v11.2.0
 ```
