@@ -1,7 +1,3 @@
-call plug#begin('~/.vim/plugged')
-Plug 'nightsense/stellarized'
-call plug#end()
-
 " カラースキーム
 colorscheme koehler
 " ダーク系のカラースキームを使う
