@@ -48,6 +48,8 @@ alias gs='git status'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
 alias gc-mtypo='git commit -m "fix:typo"'
+### 直前のコミット取り消し
+alias grsh='git reset --soft HEAD^'
 alias gp='git push'
 alias grso='git remote set-url origin'
 
