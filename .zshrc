@@ -45,6 +45,8 @@ alias yi='yarn install'
 
 ## git
 alias gs='git status --short'
+### 全ファイルadd
+alias gaa='git add ./'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
 alias gc-mtypo='git commit -m "fix:typo"'
