@@ -44,7 +44,7 @@ alias yr='yarn remove'
 alias yi='yarn install'
 
 ## git
-alias gs='git status'
+alias gs='git status --short'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
 alias gc-mtypo='git commit -m "fix:typo"'
