@@ -56,6 +56,8 @@ alias gc-mtypo='git commit -m "fix:typo"'
 alias grsh='git reset --soft HEAD^'
 alias gp='git push'
 alias grso='git remote set-url origin'
+### 新しく作ったブランチをpushする時に使うやつ(git push new branchの略)
+alias gpnb=' git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
 
 ## zsh
 alias sz='source ~/.zshrc'
