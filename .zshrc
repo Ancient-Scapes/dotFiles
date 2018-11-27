@@ -47,6 +47,8 @@ alias yi='yarn install'
 alias gs='git status --short'
 ### 全ファイルadd
 alias gaa='git add ./'
+### ファイルの行ごとにきれいなコミットする時に使うやつ
+alias gap='git add -p'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
 alias gc-mtypo='git commit -m "fix:typo"'
