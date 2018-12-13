@@ -50,8 +50,8 @@ alias gaa='git add ./'
 ### ファイルの行ごとにきれいなコミットする時に使うやつ
 alias gap='git add -p'
 alias gc-b='git checkout -b'
-alias gc-m='git commit -m'
-alias gc-mtypo='git commit -m "fix:typo"'
+alias gcm='git commit -m'
+alias gcmtypo='git commit -m "fix:typo"'
 ### 直前のコミット取り消し
 alias grsh='git reset --soft HEAD^'
 alias gp='git push'
