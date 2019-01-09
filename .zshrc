@@ -7,6 +7,11 @@ export ZSH=/Users/$USER/.oh-my-zsh
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+# ndenv
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
+
+
 # イケてるテーマを設定
 ZSH_THEME="spaceship"
 
