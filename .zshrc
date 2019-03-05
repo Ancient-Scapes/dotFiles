@@ -63,6 +63,7 @@ alias gdc='git diff --cached'
 ### コミット系
 alias gcm='git commit -m'
 alias gcmtypo='git commit -m "fix:typo"'
+alias gcmconf='git commit -m "fix: [merge] masterをマージし、コンフリクト解決しました"'
 ### 直前のコミット取り消し
 alias grsh='git reset --soft HEAD^'
 alias gp='git push'
