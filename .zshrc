@@ -7,6 +7,11 @@ export ZSH=/Users/$USER/.oh-my-zsh
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+# ndenv
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
+
+
 # イケてるテーマを設定
 ZSH_THEME="spaceship"
 
@@ -45,13 +50,20 @@ alias yi='yarn install'
 
 ## git
 alias gs='git status --short'
+# masterをpull系
+alias gpom='git pull origin master'
+alias gpod='git pull origin develop'
 ### 全ファイルadd
 alias gaa='git add ./'
 ### ファイルの行ごとにきれいなコミットする時に使うやつ
 alias gap='git add -p'
 alias gc-b='git checkout -b'
+### 差分系
+alias gdc='git diff --cached'
+### コミット系
 alias gcm='git commit -m'
 alias gcmtypo='git commit -m "fix:typo"'
+alias gcmconf='git commit -m "fix: [merge] masterをマージし、コンフリクト解決しました"'
 ### 直前のコミット取り消し
 alias grsh='git reset --soft HEAD^'
 alias gp='git push'
