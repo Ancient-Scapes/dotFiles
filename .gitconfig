@@ -2,7 +2,7 @@
 	excludesfile = /Users/$HOME/.gitignore_global
 	editor = vim -f
 [user]
-	name = SugarShootingStar
+	name = Ancient-Scapes
 	email = ryu.8224@gmail.com
 [commit]
 	template = /Users/$HOME/.stCommitMsg
