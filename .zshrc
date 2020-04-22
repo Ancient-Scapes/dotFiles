@@ -3,20 +3,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/bin:$PATH"
 export ZSH=/Users/$USER/.oh-my-zsh
 
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-
 # ndenv
 export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
 
 
-# イケてるテーマを設定
-ZSH_THEME="spaceship"
-
-# pluginの設定
-## zsh-syntax-hilighting:シンタックスハイライトの設定
 ## zsh-completions:zshの補完を最強にするやつ
 plugins=(
   git zsh-syntax-highlighting zsh-completions
@@ -24,8 +15,10 @@ plugins=(
 
 # コマンド補完の設定
 autoload -U compinit && compinit -u
-# 呪文
-source $ZSH/oh-my-zsh.sh
+
+# イケてるテーマを設定
+autoload -U promptinit; promptinit
+prompt pure
 
 # gitignore.io用のコマンド
 function gi() { curl -L -s -k https://www.gitignore.io/api/$@ ;}
@@ -35,30 +28,19 @@ function gi() { curl -L -s -k https://www.gitignore.io/api/$@ ;}
 alias sshk='ssh-keygen -t rsa'
 alias vsc='vi ~/.ssh/config'
  
-## Node
-alias n='node index.js'
-
-### npm
-alias ni='npm install'
-alias nu='npm uninstall'
-alias nr='npm run'
-
-### yarn
-alias ya='yarn add'
-alias yr='yarn remove'
-alias yi='yarn install'
-
 ## git
 alias gs='git status --short'
 # masterをpull系
 alias gpom='git pull origin master'
 alias gpod='git pull origin develop'
-### 全ファイルadd
+### add
+alias ga='git add'
 alias gaa='git add ./'
 ### ファイルの行ごとにきれいなコミットする時に使うやつ
 alias gap='git add -p'
 alias gc-b='git checkout -b'
 ### 差分系
+alias gd='git diff'
 alias gdc='git diff --cached'
 ### コミット系
 alias gcm='git commit -m'
@@ -75,10 +57,25 @@ alias gpnb=' git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
 alias sz='source ~/.zshrc'
 alias vz='vi ~/.zshrc'
 
-## anyenv
-alias ani='anyenv install'
-alias anu='anyenv update'
-
 ## ndenv
 alias ndi='ndenv install'
 alias ndg='ndenv global'
+
+# gerrit作業用
+
+## 最新版取得
+alias kpull='git pull --rebase origin master'
+
+## 再コミット
+alias gcam='git commit --amend'
+
+## push
+alias kpush='git push origin HEAD:refs/for/master'
+
+## conflict pull
+alias kconfpull='git fetch origin/master && git rebase master'
+
+## conflict push
+alias kconfpush='git rebase --continue && git push origin HEAD:refs/for/master'
+
+alias l='ls -la'
