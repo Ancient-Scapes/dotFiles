@@ -3,6 +3,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/bin:$PATH"
 export ZSH=/Users/$USER/.oh-my-zsh
 
+# nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+
 ## zsh-completions:zshの補完を最強にするやつ
 plugins=(
   git zsh-syntax-highlighting zsh-completions
