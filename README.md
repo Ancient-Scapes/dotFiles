@@ -11,20 +11,6 @@ sudo ./install.sh
 ```
 
 
-## anyenv
-```zsh
-git clone https://github.com/riywo/anyenv ~/.anyenv
-exec $SHELL -l
-```
-
-### ndenv
-```zsh
-anyenv install ndenv
-ndenv install v11.2.0
-ndenv global v11.2.0
-```
-
-
 ## exenv
 ```zsh
 anyenv install exenv

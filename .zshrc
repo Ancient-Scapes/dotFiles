@@ -3,11 +3,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/bin:$PATH"
 export ZSH=/Users/$USER/.oh-my-zsh
 
-# ndenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
-
-
 ## zsh-completions:zshの補完を最強にするやつ
 plugins=(
   git zsh-syntax-highlighting zsh-completions
