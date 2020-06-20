@@ -31,4 +31,12 @@ sudo ./install.sh
 - iTerm2
 - Firefox
 - Google Chrome
-- Virtual Box
+- Google IME
+- Krisp
+- zoom
+- Disocrd
+- Docker
+- Snap Camera
+- XCode
+
+
