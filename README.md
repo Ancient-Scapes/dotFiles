@@ -19,3 +19,16 @@ sudo ./install.sh
 - VSCode Setting
 - VSCode Extensions
 
+## Install Applications(TODO)
+
+- Notion
+- Karabiner-Elements
+- Razer Synapse
+- Slack
+- VSCode
+- Figma
+- Spotify
+- iTerm2
+- Firefox
+- Google Chrome
+- Virtual Box
