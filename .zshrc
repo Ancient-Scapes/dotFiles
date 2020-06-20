@@ -39,6 +39,10 @@ alias gaa='git add ./'
 ### ファイルの行ごとにきれいなコミットする時に使うやつ
 alias gap='git add -p'
 alias gc-b='git checkout -b'
+## stash
+alias gsu='git stash save -u'
+alias gsa='git stash apply'
+
 ### 差分系
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -51,7 +55,7 @@ alias grsh='git reset --soft HEAD^'
 alias gp='git push'
 alias grso='git remote set-url origin'
 ### 新しく作ったブランチをpushする時に使うやつ(git push new branchの略)
-alias gpnb=' git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
+alias gpnb='git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
 
 ## zsh
 alias sz='source ~/.zshrc'
@@ -79,3 +83,6 @@ alias kconfpull='git fetch origin/master && git rebase master'
 alias kconfpush='git rebase --continue && git push origin HEAD:refs/for/master'
 
 alias l='ls -la'
+
+## debug pr branch
+function bd () { git stash save -u "some files when checkout $@ branch" && git fetch && git checkout $@ && git pull && yarn dev  }
