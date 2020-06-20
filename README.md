@@ -12,3 +12,10 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
+## TODO
+
+- Mac Setting
+- Mac Applications Install
+- VSCode Setting
+- VSCode Extensions
+
