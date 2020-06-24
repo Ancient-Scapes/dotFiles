@@ -86,3 +86,9 @@ alias l='ls -la'
 
 ## debug pr branch
 function bd () { git stash save -u "some files when checkout $@ branch" && git fetch && git checkout $@ && git pull && yarn dev  }
+
+## add remote repository with https
+function gra () { git remote add origin https://Ancient-Scapes@github.com/Ancient-Scapes/$@.git }
+
+## set remote repository with https
+function grs () { git remote set-url origin  https://Ancient-Scapes@github.com/Ancient-Scapes/$@.git }
