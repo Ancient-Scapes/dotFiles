@@ -1,8 +1,8 @@
-# my dotFiles
+# dotFiles
 
 ## Usage
 
- - install.sh
+ - git clone and use install.sh.
 
 ### Path:~
 ```zsh
@@ -11,31 +11,4 @@ cd dotFiles
 chmod +x install.sh
 sudo ./install.sh
 ```
-
-## TODO
-
-- Mac Setting
-- Mac Applications Install
-- VSCode Setting
-- VSCode Extensions
-
-## Install Applications(TODO)
-
-- Notion
-- Karabiner-Elements
-- Razer Synapse
-- Slack
-- VSCode
-- Figma
-- Spotify
-- iTerm2
-- Firefox
-- Google Chrome
-- Google IME
-- Krisp
-- zoom
-- Disocrd
-- Docker
-- Snap Camera
-- XCode
 
