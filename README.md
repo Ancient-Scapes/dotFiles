@@ -6,7 +6,7 @@
 
 ### Path:~
 ```zsh
-git clone https://github.com/SugarShootingStar/dotFiles.git
+git clone https://Ancient-Scapes@github.com/Ancient-Scapes/dotFiles.git
 cd dotFiles
 chmod +x install.sh
 sudo ./install.sh
@@ -38,5 +38,4 @@ sudo ./install.sh
 - Docker
 - Snap Camera
 - XCode
-
 
